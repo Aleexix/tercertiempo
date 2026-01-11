@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
+
 
 @custom-variant dark (&:is(.dark *));
 
@@ -123,10 +125,8 @@
     @apply bg-background text-foreground;
   }
 }
-
-@tailwind utilities;
-
-@keyframes carousel {
+/* Animación del carrusel infinito */
+@keyframes scroll {
   0% {
     transform: translateX(0);
   }
@@ -135,6 +135,22 @@
   }
 }
 
-.animate-carousel {
-  animation: carousel 80s linear infinite;
+* {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.font-bebas,
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+/* Pausa la animación al hacer hover */
+.animate-scroll:hover {
+  animation-play-state: paused;
 }
