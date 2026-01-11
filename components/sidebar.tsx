@@ -13,7 +13,7 @@ import {
 const menuItems = [
   { icon: Home, label: 'Inicio', href: '/' },
   { icon: Calendar, label: 'Eventos', href: '/eventos' },
-  { icon: Trophy, label: 'Partidos', href: '/partidos' },
+  { icon: Trophy, label: 'Inventario', href: '/inventario' },
   { icon: Users, label: 'Reservas', href: '/reservas' },
   { icon: Beer, label: 'Menú', href: '/menu' },
 ];
